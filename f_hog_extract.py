@@ -1,7 +1,7 @@
-import numpy as np
 import os
-from skimage import feature as ft
+
 import cv2
+from skimage import feature as ft
 
 img_label = {"U-turn": 0, "Go slow": 1, "stop": 2, "background": 3}
 

@@ -1,8 +1,8 @@
+import matplotlib.pyplot as plt
 import numpy as np
-from sklearn.svm import SVC
 from sklearn.externals import joblib
 from sklearn.metrics import roc_curve, auc
-import matplotlib.pyplot as plt
+from sklearn.svm import SVC
 
 
 def load_hog_data(hog_txt):
