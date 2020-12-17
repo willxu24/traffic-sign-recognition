@@ -1,0 +1,10 @@
+/.idea/
+
+/venv/
+
+#/data/
+/data/*
+#!/data/*.txt
+!/data/*.pkl
+
+/test/
