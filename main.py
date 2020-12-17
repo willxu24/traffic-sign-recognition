@@ -22,11 +22,12 @@ def preprocess_img(imgBGR):
     Rmax = np.array([180, 255, 255])
     img_Rbin = cv2.inRange(imgHSV, Rmin, Rmax)
 
-    Ymin = np.array([30, 43, 46])
-    Ymax = np.array([90, 255, 255])
+    Ymin = np.array([26, 43, 46])
+    Ymax = np.array([34, 255, 255])
     img_Ybin = cv2.inRange(imgHSV, Ymin, Ymax)
 
-    img_bin = np.maximum(img_Bbin, img_Rbin, img_Ybin)
+    img_bin = np.maximum(img_Bbin, img_Rbin)
+    img_bin = np.maximum(img_bin, img_Ybin)
     # print(img_bin)
     return img_bin
 
